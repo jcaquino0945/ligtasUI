@@ -13,10 +13,7 @@ import { baseURL } from './shared/baseurl';
 import { HttpClientModule } from '@angular/common/http';
 
 import {EvacsService} from './services/evacs.service';
-import { LoginComponent } from './login/login.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
-
-import { FormsModule } from '@angular/forms'; 
+import { AdminComponent } from './admin/admin.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,14 +22,12 @@ import { FormsModule } from '@angular/forms';
     EvacComponent,
     PagenotfoundComponent,
     EvacdetailComponent,
-    LoginComponent,
-    DashboardComponent
+    AdminComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
   ],
   providers: [EvacsService, {provide: 'baseURL', useValue: baseURL}],
   bootstrap: [AppComponent]
