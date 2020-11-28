@@ -2,8 +2,8 @@
     <div class="container">
         <div class="float-left">
             <h4 class="pb-3">Enter message to the subscribers.</h4>
-            <p style="width: 30rem;"><input type="text" class="form-control"></p>
-            <p><a class="btn btn-primary" role="button">Send</a></p>
+            <p style="width: 30rem;"><input type="text" class="form-control" (keyup)=getVal($event)></p>
+            <p><button class="btn btn-primary" role="button" (click)="sendMsg()">Send</button></p>
         </div>
         <div class="float-right">
             <div class="card" style="width: 18rem;">
