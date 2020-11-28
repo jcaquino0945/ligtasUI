@@ -13,6 +13,7 @@ import { baseURL } from './shared/baseurl';
 import { HttpClientModule } from '@angular/common/http';
 
 import {EvacsService} from './services/evacs.service';
+import { AdminComponent } from './admin/admin.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +21,8 @@ import {EvacsService} from './services/evacs.service';
     HomeComponent,
     EvacComponent,
     PagenotfoundComponent,
-    EvacdetailComponent
+    EvacdetailComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,
