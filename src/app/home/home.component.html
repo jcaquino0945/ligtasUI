@@ -1,0 +1,31 @@
+<main role="main">
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-2 m-3">SAVING LIVES EME EME</h1>
+          <p class="lead m-3">This is a modified jumbotron that occupies
+                          the entire horizontal space of its parent.</p>
+        </div>
+      </div>
+
+      
+<div class="container marketing" *ngIf="evacs">
+    <h2 class="text-center">Available Evacuation Areas</h2>
+    <div class="row">
+        <div class="col-lg-4" *ngFor="let evac of evacs" [routerLink]="['/evacDetail', evac._id]">
+          <img class="rounded-circle" src="" alt="Generic placeholder image" width="140" height="140">
+          <h2>{{evac.name}}</h2>
+          <h4>{{evac.location}}</h4>
+          <h5>{{evac.availability}}</h5>
+          <p>{{evac.description}}</p>
+          <p><a class="btn btn-secondary" role="button">Add to cart &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+</div>
+
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-2 m-3">HOW TO SUBSCRIBE</h1>
+      <p class="lead m-3">This is a modified jumbotron that occupies
+                      the entire horizontal space of its parent.</p>
+    </div>
+  </div>

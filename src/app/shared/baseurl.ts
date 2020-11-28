@@ -1,0 +1,1 @@
+export const baseURL = 'https://ligtas-trial.herokuapp.com';
