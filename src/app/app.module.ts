@@ -14,6 +14,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 import {EvacsService} from './services/evacs.service';
 import { AdminComponent } from './admin/admin.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +28,8 @@ import { AdminComponent } from './admin/admin.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FontAwesomeModule,
   ],
   providers: [EvacsService, {provide: 'baseURL', useValue: baseURL}],
   bootstrap: [AppComponent]

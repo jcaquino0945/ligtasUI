@@ -1,0 +1,5 @@
+  <form class="form-inline" novalidate #loginForm="ngForm" (ngSubmit)="onSubmit()">
+    <input class="form-control mb-2 mr-sm-2"  placeholder="Username" type="text" [(ngModel)]="user.username" name="username"  #username="ngModel" required>
+    <input class="form-control mb-2 mr-sm-2"  placeholder="Password" type="password" [(ngModel)]="user.password" name="password" #password="ngModel" required>
+    <button type="submit" class="btn btn-primary mb-2" [disabled]="loginForm.form.invalid">Submit</button>
+  </form>

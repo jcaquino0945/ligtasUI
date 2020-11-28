@@ -11,13 +11,16 @@ import { map } from 'rxjs/operators';
 export class EvacsService {
 
   constructor(private http: HttpClient) { }
-  
+  tryDash() {
+    return this.http.get('/dashboard/getAccessToken');
+  }
   getEvacs(): Observable<Evacs[]> {
     return this.http.get<Evacs[]>(baseURL + '/evacs');
   }
   getAvailableEvacs(): Observable<Evacs[]> {
     return this.http.get<Evacs[]>(baseURL + '/evacs/available');
   }
+  
   getEvac(evacId: number): Observable<Evacs> {
     return this.http.get<Evacs>(baseURL + '/evacs/' + evacId);
   }

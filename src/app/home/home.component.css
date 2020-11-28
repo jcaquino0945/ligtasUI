@@ -1,5 +1,6 @@
-img {
-    border:0;
+h6 {
+  padding:0;
+  margin:0;
 }
 
 .jumbotron {
@@ -27,12 +28,7 @@ img {
     max-width: 40rem;
   }
 
-  footer {
-    padding-top: 3rem;
+  .float-left, .float-right {
     padding-bottom: 3rem;
-  }
-  
-  footer p {
-    margin-bottom: .25rem;
   }
   
