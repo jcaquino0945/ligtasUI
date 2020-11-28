@@ -14,5 +14,5 @@ evacs: Evacs[];
   ngOnInit(): void {
     this.evacsService.getAvailableEvacs().subscribe(evacs => this.evacs = evacs)
   }
-
+ 
 }
